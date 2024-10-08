@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innomatics Research Labs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+       .custom-toggler .navbar-toggler-icon-bar-1,
+.custom-toggler .navbar-toggler-icon-bar-2,
+.custom-toggler .navbar-toggler-icon-bar-3 {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    margin: 5px auto;
+    transition: transform 0.2s ease-in-out;
+}
+.custom-toggler[aria-expanded="true"] .navbar-toggler-icon-bar-1 {
+    transform: rotate(45deg) translate(3px, 3px);
+}
+
+.custom-toggler[aria-expanded="true"] .navbar-toggler-icon-bar-2 {
+    display: none;
+}
+
+.custom-toggler[aria-expanded="true"] .navbar-toggler-icon-bar-3 {
+    transform: rotate(-45deg) translate(3px, -3px);
+}
+    </style>
+</head>
+<body>
+
+<!--nav bar section start-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light position-sticky top-0 z-3 mt-0">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./asset/Innomatics.png" alt="Logo" width="150" height="30">
+            </a>
+            <!-- Menu Button (only visible on mobile devices) -->
+            <button class="navbar-toggler  custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon-bar navbar-toggler-icon-bar-1"></span>
+                <span class="navbar-toggler-icon-bar navbar-toggler-icon-bar-2"></span>
+                <span class="navbar-toggler-icon-bar navbar-toggler-icon-bar-3"></span>
+            </button>
+            <!-- Menu Items (hidden on mobile devices, visible on larger devices) -->
+            <div class="collapse navbar-collapse bg-light  custom-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-black" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#placement">Placements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#why">Why Innomatics</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Internship</a>
+                        <ul class="dropdown-menu dropdown-menu-end mt-1" aria-labelledby="navbarDropdown">
+			    <li><a class="dropdown-item" href="./internship.html">MERN Stack Internship</a></li>
+			    <li><a class="dropdown-item" href="./internship.html">Data Science Internship</a></li>
+			    <li><a class="dropdown-item" href="./internship.html">Summer Internship</a></li>
+		        </ul> 
+ 		   </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--nav bar section ends here-->
+
+<!--carousel section start-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+   </button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="./asset/guidance.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="./asset/IT-leaders_updated-Banner.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="./asset/gen-ai-banner_updated.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--carousel section ends here -->
+
+
+
+
+<!--main section-->
+<main class="container">
+   <section class="text-center fs-3 mt-2">
+    <p><span class="badge bg-danger mt-4">WE EQUIP YOU WITH SKILLS</span></p>
+    <h1 class="main-title mt-4 fs-1">Creating Skilled Taskforce Of Job Ready
+           <span class="highlight ">Developer Across Multiple Programming Languages</span></h1>
+    <p class="sub-title"> Join India's Most Trusted Ed-Tech Platform</p>
+    <p class="sub-title">What You Want To Learn ? </p>
+   </section>
+
+   <section class="search-bar container">
+    <input placeholder="Search By Course Name, Just Type To Get Hint..." type="text"/>
+   </section>
+
+   <section class="text-center">
+    <a class="btn-custom bg-danger" href="#courses">Explore All Our Courses</a>
+    <a class="btn-custom bg-danger" href="#contact">Invite Us To Your College/School </a>
+   </section>
+</main>
+<!--main section ends here-->
+
+
+
+<!--boxes section-->
+<div class="container-fluid mt-4 bg-dark">
+    <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 row-cols-xl-4 g-4">
+        <div class="col text-center">
+            <div class="display-1 text-black">
+                <i class="fas fa-users" style="color: crimson;"></i>
+            </div>
+            <div class="display-1 text-danger my-3 fs-3 text-white">
+                5000+
+            </div>
+            <div class="h1 text-black fs-2 text-white">
+                Trainees
+            </div>
+        </div>
+
+        <div class="col text-center">
+            <div class="display-1 text-black">
+                <i class="fa-regular fa-comment-dots" style="color: crimson;"></i>
+            </div>
+            <div class="display-1 text-danger my-3 fs-3 text-white">
+                400+
+            </div>
+            <div class="h1 text-black fs-2 text-white">
+                Student Reviews
+            </div>
+        </div>
+
+        <div class="col text-center">
+            <div class="display-1 text-black">
+                <i class="fa-regular fa-building" style="color: crimson;"></i>
+            </div>
+            <div class="display-1 text-danger my-3 fs-3 text-white">
+                300+
+            </div>
+            <div class="h1 text-black fs-2 text-white">
+                Partnered Companies
+            </div>
+        </div>
+
+        <div class="col text-center mb-2">
+            <div class="display-1 text-black">
+               <i class="fa-solid fa-network-wired" style="color: crimson;"></i>
+            </div>
+            <div class="display-1 text-danger my-3 fs-3 text-white">
+                500+
+            </div>
+            <div class="h1 text-black fs-2 text-white">
+                Industry Connections
+            </div>
+        </div>
+    </div>
+</div>
+<!--boxes section ends here-->
+
+<!--courses section start-->
+<div class="container-fluid w-100  courses-container" id="courses">
+<div class="text-center mt-5">
+     <h1><span class="badge text-center align-center bg-danger">Our Most Loved Courses</span></h1>
+</div>
+<div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4 p-1 mt-1">
+  <div class="col d-flex justify-content-center align-items-center text-center">
+    <div class="card">
+      <img src="./asset/courses/full_stack.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center crimson">Full Stack Development</h5>
+        <p class="card-text">Learn the right skills to break into a development career & advance yourself as a full-stack Developer. It includes Frontend, Backend, databases, debugging & testing.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col d-flex justify-content-center align-items-center text-center">
+    <div class="card">
+      <img src="./asset/courses/data_science.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center crimson">NASSCOM Futureskills Prime Certified Data Science</h5>
+        <p class="card-text">This is a great choice for tech geeks, students, working professionals and aspiring data scientists who want to upskill and build a better foundation is the stream of Data Science.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col d-flex justify-content-center align-items-center text-center">
+    <div class="card">
+      <img src="./asset/courses/dev_ops.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center crimson">Devops</h5>
+        <p class="card-text">This is a must-learn course for the individuals who started her journey in the DevOps and cloud world and is ideally suited to developers, Cloud Admin, Solutions Architects and managers.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col d-flex justify-content-center align-items-center text-center">
+    <div class="card">
+      <img src="./asset/courses/data_analytics.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center crimson">NASSCOM Futureskills Prime Certified Predictive Analytics</h5>
+        <p class="card-text">Predictive Analytics Modeler is to gain knowledge in analytics models to collect, data mining, data collection, data visualization, and integration, nodes, and statistical analysis.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col d-flex justify-content-center align-items-center text-center">
+    <div class="card">
+      <img src="./asset/courses/amazon_aws.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center crimson">Amazon Web Services</h5>
+        <p class="card-text">Right from the jobseeker or existing professional who wants to accelerate their career with advanced concepts of cloud computing, AWS and core services.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col d-flex justify-content-center align-items-center text-center">
+    <div class="card">
+      <img src="./asset/courses/digital_marketing.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center crimson">Digital Marketing</h5>
+        <p class="card-text">Digital Marketing Course at Innomatics is perfect for Entrepreneurs, Freelancers, Job seekers, Wanna be Entrepreneurs, working professionals who want to enhance their skill.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--courses section ends here-->
+
+<!--our classroom section start-->
+<div class="container-fluid w-100  classroom-container" id="classroom">
+   <div class="text-center mt-5">
+     <h1><span class="badge text-center align-center bg-danger">Our Class Room</span></h1>
+   </div>
+
+  <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4 p-1 mt-1">
+     <div class="col d-flex justify-content-center align-items-center text-center">
+        <div class="room-card">
+           <img src="https://www.innomatics.in/wp-content/uploads/cache/2023/01/IMG_5450-scaled/2374760138.jpg" class="card-img-top" alt="...">
+       </div>
+    </div>
+    
+    <div class="col d-flex justify-content-center align-items-center text-center">
+        <div class="room-card">
+           <img src="https://www.innomatics.in/wp-content/uploads/cache/2023/01/IMG_5414-scaled/2727721008.jpg" class="card-img-top" alt="...">
+       </div>
+    </div>
+
+    <div class="col d-flex justify-content-center align-items-center text-center">
+        <div class="room-card">
+           <img src="https://www.innomatics.in/wp-content/uploads/cache/2023/01/IMG_5452-scaled/2408469614.jpg" class="card-img-top" alt="...">
+       </div>
+    </div>
+  </div>
+
+
+
+</div>
+<!--our classroom section ends here-->
+
+
+
+<!--our placements story start here-->
+<div class="container-fluid my-5 text-center" id="placement">
+        <h1><span class="badge text-center align-center  bg-danger mb-2">Our Placement Stories</span></h1>
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-4 m-2">
+            <div class="col">
+                <div class="card placement-card h-100">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2024/08/Varahala_Durga-min.jpg" class="card-img-top" alt="Card Image 1">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card placement-card h-100">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2024/08/sravika-min.jpg" class="card-img-top" alt="Card Image 2">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card placement-card h-100">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2024/08/Prakhar_Shukla-min.jpg" class="card-img-top" alt="Card Image 3">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card placement-card h-100">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2024/08/Satish_Vanga_1-min.jpg" class="card-img-top" alt="Card Image 4">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card placement-card h-100">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2024/08/Vincent_Prajwal-min.jpg" class="card-img-top" alt="Card Image 5">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card placement-card h-100">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2024/08/Vivek_reddy_mora-min.jpg" class="card-img-top" alt="Card Image 6">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card placement-card h-100">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2024/08/Venkata_Rohith_Peddireddy-min.jpg" class="card-img-top" 
+                           alt="Card Image 7">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card placement-card h-100">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2024/08/Sk._Amreen-min.jpg" class="card-img-top" alt="Card Image 8">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--placements story ends here-->
+
+
+<!--faq section-->
+<div class="container mt-5 text-center" id="why">
+    <h1><span class="badge text-center align-center bg-danger mb-4">Why People Choose us</span></h1>
+    <div class="accordion" id="accordionExample">
+        <!-- Accordion Item 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                 aria-controls="collapseOne">
+                    <h6 class="fw-bold">EXPERT TRAINERS</h6>
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="text-center">
+                        <!-- Centered and responsive image -->
+                        <img src="./asset/faq-image/business.jpg" alt="Placeholder Image" class="img-fluid d-block mx-auto mb-3">
+                    </div>
+                   <p> Innomatics explored all over India to get the best trainers and succeeded with it. We have a pool of trainers working with
+                       highly qualified business partners and fortune companies to provide advanced and comprehensive training.
+                       They curate the course content with an eye on the industry needs and standards to make students skilful and champions in
+                       solving the complex challenges of the industry.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accordion Item 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                    <h6 class="fw-bold">CAPSTONE PROJECTS</h6>
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="text-center">
+                        <!-- Centered and responsive image -->
+                        <img src="./asset/faq-image/Live-Projects.png" alt="Placeholder Image" class="img-fluid d-block mx-auto mb-3">
+                    </div>
+                      <p>At Innomatics, we believe in a practical learning approach. Making students work on real-time data helps in giving them
+                        a clear visualization of how it is applied in the real world. Considering this, we follow a collaborative group-oriented
+                        approach to learn with discussion forums and get hands-on with capstone projects to make our trainees good team players
+                        and strong thinkers to solve problems.</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- Accordion Item 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                 aria-expanded="false" aria-controls="collapseThree">
+                  <h6 class="fw-bold"> IN-HOUSE INTERNSHIP</h6>
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="text-center">
+                        <!-- Centered and responsive image -->
+                        <img src="./asset/faq-image/In-House-Internship.jpg" alt="Placeholder Image" class="img-fluid d-block mx-auto mb-3">
+                    </div>
+                      <p>Internships aren’t just about ground work at Innomatics. We believe that with the right program, One can develop young
+                       talents and lay a foundation for recruiting brilliant young minds to work for any organization. We do provide paid/unpaid
+                       internship programs that offer the opportunity to edge out larger competitors by providing interns with opportunities to
+                       conquer the business challenges.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accordion Item 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour">
+                   <h6 class="fw-bold"> PLACEMENTS</h6>
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="text-center">
+                        <!-- Centered and responsive image -->
+                        <img src="./asset/faq-image/Placement-Assistance.jpg" alt="Placeholder Image" class="img-fluid d-block mx-auto mb-3">
+                    </div>
+                       <p>We have a collaboration with over 100+ MNCs and SMEs who directly source their business requirements through Innomatics.
+                        Also having a dedicated placement verticle that enables trainees to take advantage and excel in the career with extensive
+                        knowledge gained at Innomatics. For the benefit of the students to face the real challenges, we conduct mockup interviews
+                        with instant feedback,1-1 mentorship, provide extensive support to the Learning Management System (LMS) where they can
+                       access the classes and stay updated, attend career fairs, Hackathons, workshops and meetups with leading industry experts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--faq section ends here-->
+
+<!--contact us section start-->
+<div class="container my-1 " id="contact">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-12 col-lg-6"> <!-- Adjust width for larger screens here -->
+        <div class="form-container p-4 text-center">
+          <h1><span class="badge text-center align-center bg-danger mb-4">Contact With us</span></h1>
+
+          <form>
+            <!-- Full Name -->
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingName" placeholder="John Doe">
+              <label for="floatingName">Full Name</label>
+            </div>
+
+            <!-- Contact Number -->
+            <div class="form-floating mb-3">
+              <input type="tel" class="form-control" id="floatingContact" placeholder="Contact Number">
+              <label for="floatingContact">Contact Number</label>
+            </div>
+
+            <!-- WhatsApp Number -->
+            <div class="form-floating mb-3">
+              <input type="tel" class="form-control" id="floatingWhatsApp" placeholder="WhatsApp Number">
+              <label for="floatingWhatsApp">WhatsApp Number</label>
+            </div>
+
+            <!-- Location -->
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingLocation" placeholder="Location">
+              <label for="floatingLocation">Location</label>
+            </div>
+
+            <!-- School/College Name -->
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingSchoolCollege" placeholder="School/College Name">
+              <label for="floatingSchoolCollege">School/College Name</label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-grid gap-2">
+              <button type="button" class="btn submit-btn btn-lg">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--contact us section ends here-->
+
+<!--pre-footer start-->
+
+<div class="container-fluid bg-black mb-0 py-1">
+   <div class="last-logo">
+    <img alt="Innomatics Research Labs Logo" height="10" src="https://www.innomatics.in/wp-content/uploads/2023/01/innomatics-footer-logo.png" 
+         width="400"/>
+   </div>
+   <div class="description text-white">
+    <p> A leading training institute,<strong>Innomatics Research Labs </strong>offers courses in 
+        areas such as NASSCOM Futureskills Prime Certified <strong> Data Science </strong>, Python, 
+        AI, Data Analytics, <strong>Full Stack Development </strong>, and  <strong> Digital Marketing 
+        </strong>. Our practical training is designed meticulously to meet industry needs and provide 
+        valuable certification upon completion, empowering individuals to excel in their careers.
+    </p>
+   </div>
+
+   <div class="social-icons">
+        <a href="#" class="linkedin">
+           <i class="fa-brands fa-linkedin"></i>
+       </a>
+
+       <a href="#" class="facebook">
+            <i class="fa-brands fa-facebook"></i>
+       </a>
+    
+       <a href="#" class="instagram">
+            <i class="fa-brands fa-instagram"></i>
+       </a>
+    
+       <a href="#" class="x">
+            <i class="fa-brands fa-square-x-twitter"></i>
+       </a>
+   
+        <a href="#" class="youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+   </div>
+
+   <div class="courses">
+    <h2>Courses </h2>
+     <ul class="text-white">
+       <li>Data Science</li>
+       <li>Online Data Science</li>
+       <li>Advanced Generative AI</li>
+       <li>Full Stack Web Developer</li>
+       <li>Digital Marketing</li>
+       <li>Placements</li>
+       <li>Partner with us</li>
+       <li>Privacy Policy</li>
+    </ul>
+   </div>
+
+   <div class="contact-details text-white">
+    <h2>
+     Contact Details:
+    </h2>
+    <div class="location">
+     <i class="fas fa-map-marker-alt">
+     </i>
+     <strong>
+      Kukatpally — Hyderabad
+     </strong>
+     <br/>
+     #205, 2nd Floor, Fortune Signature, Near JNTU Metro Station, Kukatpally, Hyderabad, Telangana 500085
+    </div>
+    <div class="location">
+     <i class="fas fa-map-marker-alt">
+     </i>
+     <strong>
+      Gachibowli — Hyderabad
+     </strong>
+     <br/>
+     2nd Floor, Leeway, BP Raju Marg, Opp. Sarath City Capital Mall, Beside Subbayagari Hotel, Laxmi Cyber City, Whitefields, Kondapur, Telangana 500081
+    </div>
+    <div class="location">
+     <i class="fas fa-map-marker-alt">
+     </i>
+     <strong>
+      Pune
+     </strong>
+     <br/>
+     2nd Floor, Sai Sayaji Apartment, 201,(P, Paud Rd, beside VANAZ Metro, above Bata showrrom, Ramkrishna Paramhans Nagar, Kothrud, Pune, Maharashtra 411038
+    </div>
+    <div class="phone">
+     <i class="fas fa-phone-alt">
+     </i>
+     <strong>
+      Phone/Whatsapp:
+     </strong>
+     <br/>
+     +91-9951666670 / +91-9951666671
+     <br/>
+     +91-6304126766 / +91-9347804375
+    </div>
+    <div class="email">
+     <i class="fas fa-envelope">
+     </i>
+     <strong>
+      For Course:
+     </strong>
+     info@innomatics.in
+    </div>
+   </div>
+  </div>
+
+<!--pre-footer ends here-->
+
+<!--footer section start here-->
+
+    <div class="container text-center bg-white footer-section">
+        <p class="text-black p-1 m-0">Made with &hearts; By <a href="https://www.linkedin.com/in/gouranga-rout-9526701b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+         <span>Aaryan</span></a><br>2024 © all rights reserved</p>
+    </div>
+
+<!--footer section ends here-->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

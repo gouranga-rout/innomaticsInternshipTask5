@@ -1,0 +1,302 @@
+https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+ }
+
+
+
+.custom-toggler {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    box-shadow: none;
+    outline: none;
+    font-size: 24px;
+    color: #333;
+}
+
+.navbar .custom-toggler:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+.custom-collapse {
+    margin-top: 0;
+    padding-top: 0;
+   
+}
+
+.navbar-expand-md .navbar-collapse {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.navbar {
+    height: 3.75rem;
+    z-index: 1000;  
+}
+
+.navbar-collapse {
+    margin-top: .5rem;
+    text-align: center;
+}
+
+.nav-link {
+   justify-content: !center;
+ }
+.nav-link:hover {
+  background-color: crimson;
+  color: #fff !important;
+ }
+
+
+
+
+/*main content*/
+.header {            
+  padding: 20px 0;
+  text-align: center;
+  }
+    
+        
+ .main-title {
+   font-size: 2.5rem;
+   font-weight: bold;
+  }
+
+ .highlight {
+     color: crimson;
+  }
+        
+ .sub-title {
+     font-size: 1.25rem;
+     margin-top: 10px;
+  }
+       
+ .search-bar {
+     margin: 20px 0;
+ }
+        
+.search-bar input {
+     width: 100%;
+     padding: 10px;
+     border-radius: 5px;
+      border: 1px solid #ccc;
+}
+       
+ .btn-custom {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+
+.btn-custom:hover {
+   color: #fff;
+   background-color: green !important;
+ }
+
+
+/*course section*/
+.crimson {
+  color: crimson;
+ }
+
+
+
+.card {
+  box-shadow: 0 0 10px crimson;
+  border: none;
+ }
+
+
+.card:hover {
+  box-shadow: 0 0 10px #0ef;
+ }
+
+
+
+/*classroom section*/
+.room-card {
+  box-shadow: 0 0 10px #0ef;
+  border-radius: 10px;
+ }
+
+.room-card img {
+ border-radius: 10px;
+ }
+  
+
+/*placements section*/
+.placement-card {
+    border-radius: 15px;
+    overflow: hidden;
+ }
+    
+.placement-card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+ }
+
+
+
+/*contact us section start here*/
+
+.submit-btn {
+   background-color: crimson;
+   color: white;
+   border: none;
+   outline: none;
+ }
+
+    
+.submit-btn:hover {
+   background-color: green !important;
+   color: white;
+   border: none;
+   box-shadow: none;
+   outline: none !important;
+ }
+
+    
+.form-container {
+   border-radius: 10px;
+   padding: 20px;;
+ }
+
+   
+
+  input[type="text"]:focus,
+  input[type="tel"]:focus {
+    border: 1px solid red;
+    box-shadow: none;
+ }
+
+
+
+/*pre footer section start*/
+      
+.last-logo {
+    text-align: center;
+     margin-top: 20px;
+  }
+        
+.last-logo img {
+     max-width: 100%;
+     height: auto;
+  }
+        
+.description {
+     text-align: center;
+      margin: 10px 0;
+  }
+        
+.description strong {
+      color: #ff0000;
+  }
+        
+.social-icons {
+      text-align: center;
+      margin: 10px 0;
+ }
+        
+.social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 24px;
+      line-height: 1;
+      text-decoration: none;    
+  }
+ 
+.social-icons a.linkedin i {
+    color: #0e76a8;
+ }
+
+.social-icons a.facebook i {
+    color: #4267B2;
+ }
+
+.social-icons a.instagram i {
+    color: crimson;
+}
+
+.social-icons a.x i {
+    color: #fff;
+}
+
+.social-icons a.youtube i {
+    color: #FF0000;
+}
+
+ .social-icons a:focus {
+    outline: none;
+}
+
+
+
+
+
+
+ .courses, .contact-details {
+     margin: 20px 0;
+ }
+        
+.courses h2, .contact-details h2 {
+     color: #ff0000;
+ }
+ 
+.contact-details .location, .contact-details .phone, .contact-details .email {
+     margin: 10px 0;
+ }
+       
+.contact-details .location i, .contact-details .phone i, .contact-details .email i {
+    color: #ff0000;
+    margin-right: 10px;
+ }
+
+
+
+
+
+/* Last footer section */
+        
+.footer-section {
+    padding: 0 !important;
+    margin-top: 0 !important;
+ }
+ .footer-section p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+ }
+
+  .footer-section p a {
+     color: crimson;
+     text-decoration: none;
+  }
+
+       
+   .footer-section p a:hover {
+       color: crimson;
+       text-decoration: none;
+   }
+
+
+
+
+
+    @media (min-width: 992px) {
+        .placement-card {
+            margin-bottom: 1.5rem;
+        }
+    }
